@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Profil utilisateur</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(' .profile__vue').click(function(){
+                $('.details').addClass('active')
+            })
+            $(' .close').click(function(){
+                $('.details').removeClass('active')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="profile">
+        <img src="static/images/img-1.jpg" alt="Starlord" class="profile__img">
+        <a href="#" class="profile__vue">Vue Profil</a>
+        <div class="details">
+                <h2 class="details__t2">Star-Lord<br>
+                <span class="details__t3">Marvel</span>
+            </h2>
+            <p class="details__bio">
+                Star-Lord est mi-humain mi-Céleste qui a été enlevé sur Terre par 
+                le Clan de Ravageur de Yondu Udonta en 1988.
+            </p>
+            <h3 class="details__t3">Follow</h3>
+            <ul class="details__list">
+                <li class="details__list-item"><a href="#"><i class="fab fa-github-square"></i></a></li>
+                <li class="details__list-item"><a href="#"><i class="fab fa-codepen"></i></a></li>
+            </ul>
+            <div class="close"><i class="fas fa-times-circle"></i></div>
+        </div>
+    </div>
+
+</body>
+</html>

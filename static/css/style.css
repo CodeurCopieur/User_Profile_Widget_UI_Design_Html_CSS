@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #33d9b2;
+    font-family: arial;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .2);
+}
+
+.profile__img {
+    width: 100%;
+}
+
+.profile .profile__vue {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #33d9b2;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: 12px;
+    font-weight: bold;
+}
+
+.details {
+    height: 50%;
+    width: 100%;
+    background: #fff;
+    position: absolute; 
+    bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform-origin: bottom;
+    transition: ease-in .5s;
+    transform: perspective(500px) scale(0);
+}
+
+.details.active {
+    bottom: -1px;
+    transform: perspective(500px) scale(1);
+}
+
+.details .details__t2 {
+    margin: 0;
+    padding: 0;
+    color: #33d9b2;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details .details__t2 span.details__t3 {
+    font-size: 14px;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+.details .details__bio {
+    margin: 0;
+    padding: 10px 0 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+h3.details__t3{
+    background: #33d9b2;
+    color: #fff;
+    padding: 8px 50px;
+    border-radius: 25px;
+    display: -webkit-inline-box;
+}
+
+.details .details__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details__list .details__list-item {
+    list-style: none;
+    font-size: 20px;
+}
+
+.details .details__list-item:nth-child(1) .fab {
+     color: #3b5998;
+}
+
+.details .details__list-item:nth-child(2) .fab {
+    color: #dd4b39;
+}
+
+.details .details__list-item:nth-child(3) .fab {
+    color: #00aced;
+}
+
+.details .close{
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #f00;
+    cursor: pointer;
+}
